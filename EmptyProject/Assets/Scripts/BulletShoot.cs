@@ -7,10 +7,15 @@ public class BulletShoot : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float rotation;
+    private Vector3 _direction;
+
+    public void SetDirection(Vector2 direction)
+    {
+        _direction = direction;
+    }
 
     void Update()
     {
-
-        transform.position += new Vector3(speed * rotation * Time.deltaTime , 0,0);
+        transform.position += _direction * speed * Time.deltaTime;
     }
 }
