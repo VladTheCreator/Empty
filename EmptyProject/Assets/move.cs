@@ -12,7 +12,7 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,10 +24,6 @@ public class move : MonoBehaviour
         {
             Rb.AddForce(Vector2.up * jumpForce);
 
-        }
-        if (canJump == false)
-        {
-            GetComponent<Animator>().SetTrigger("jump");
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -46,3 +42,4 @@ public class move : MonoBehaviour
         }
     }
 }
+
