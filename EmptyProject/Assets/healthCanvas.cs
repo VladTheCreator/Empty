@@ -13,8 +13,7 @@ public class healthCanvas : MonoBehaviour
 
     public void DisplayHealth()
     {
-        int health = code.GetHP();
-        float healthPercent = ((float)health / (float)maxHealth) * 100;
+        float healthPercent = ((float)code.health / (float)maxHealth) * 100;
         bar.GetComponent<RectTransform>().sizeDelta = new Vector2(widthHealth / 100 * healthPercent, bar.GetComponent<RectTransform>().sizeDelta.y);
     }
 }
