@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class EnemyFollow : MonoBehaviour
+public class HorizontalEnemyFollow : MonoBehaviour
 { 
 [SerializeField] private float speed;
 [SerializeField] private float rotation;

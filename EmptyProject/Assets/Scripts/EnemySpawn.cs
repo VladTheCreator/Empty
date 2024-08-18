@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
    {
-    private float timeToSpawn;
-    [SerializeField] private float cooldown;
     [SerializeField] GameObject SpawnPoint;
     [SerializeField] GameObject Enemy;
-    void Update()
-    {
-        if (Time.time >= timeToSpawn)
+        public void SpawnEnemy()
         {
-            GameObject EnemyInstance = Instantiate(Enemy);
-            EnemyInstance.transform.position = SpawnPoint.transform.position;
-            timeToSpawn = Time.time + cooldown;
+                GameObject EnemyInstance = Instantiate(Enemy);
+                EnemyInstance.transform.position = SpawnPoint.transform.position;
         }
-    }
-}
+   }
+
 
