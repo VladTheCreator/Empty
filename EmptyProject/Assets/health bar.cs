@@ -9,13 +9,9 @@ public class healthbar : MonoBehaviour
     [SerializeField] private float widthHealth;
     [SerializeField] private int maxHealth;
     [SerializeField] private healthCanvas display;
-    [SerializeField] public int health;
+    [SerializeField] public int health = 100;
 
-    void Start()
-    {
-        health = 100;
-        dealDamage(30);
-    }
+
 
     // Update is called once per frame
     public void dealDamage(int dmg)
