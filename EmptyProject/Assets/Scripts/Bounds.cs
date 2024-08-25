@@ -9,7 +9,7 @@ public class Bounds : MonoBehaviour
         Debug.Log(halfScreenSize);
     }
 
-    public bool InHorizontalBounds()
+    public bool InRightHorizontalBound()
     {
         if (transform.position.x < halfScreenSize.x)
         {
