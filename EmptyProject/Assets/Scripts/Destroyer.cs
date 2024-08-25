@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletDestroyer : MonoBehaviour
+public class Destroyer : MonoBehaviour
 {
     [SerializeField] private float lifetime;
     void Start()
@@ -11,6 +11,7 @@ public class BulletDestroyer : MonoBehaviour
     }
     void Destroy()
     {
-        Destroy (gameObject);
+        Destroy(gameObject);
     }
 }
+
