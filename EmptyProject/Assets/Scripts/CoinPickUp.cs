@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class CoinPickUp : MonoBehaviour
+public class CoinPickUP : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
     int amountOfCoins = 0;

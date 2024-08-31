@@ -14,4 +14,3 @@ public class Destroyer : MonoBehaviour
         Destroy(gameObject);
     }
 }
-

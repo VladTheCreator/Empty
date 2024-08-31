@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd484ba059ac6054a9e649a709f74c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 107854438635055598}
   Coin: {fileID: 2369723196198737624, guid: 7227c2d62951c5c43a33a6aead89f2d8, type: 3}
 --- !u!212 &8884051227009396443
 SpriteRenderer:
@@ -115,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902b19dab5ce63b4aa27b80a5c5a19af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  ShootSpeed: 20
   rotation: 1
 --- !u!114 &-6428682753318859740
 MonoBehaviour:
