@@ -299,11 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e6188352b414a409289130dc2c94bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 1145103653}
-  widthHealth: 250
-  maxHealth: 100
   hp: {fileID: 291019965}
-  health: 100
 --- !u!114 &291019965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,9 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1145103653}
-  health: {fileID: 291019964}
   widthHealth: 250
-  maxHealth: 100
 --- !u!1 &432405890
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 6406363646643659451, guid: 4f802b8c307fb5d47b5e94543acc383c, type: 3}
+  health: {fileID: 291019964}
 --- !u!50 &432405896
 Rigidbody2D:
   serializedVersion: 4
