@@ -299,6 +299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e6188352b414a409289130dc2c94bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bar: {fileID: 0}
+  widthHealth: 0
+  maxHealth: 0
+  hp: {fileID: 0}
+  health: 100
 --- !u!114 &291019965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f35bfdcf00341284b9c8f29353ef2d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bar: {fileID: 0}
+  health: {fileID: 0}
+  widthHealth: 0
+  maxHealth: 0
 --- !u!1 &432405890
 GameObject:
   m_ObjectHideFlags: 0
