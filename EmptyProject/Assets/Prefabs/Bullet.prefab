@@ -9,10 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6633266088927106966}
+  - component: {fileID: 6470959761365819945}
   - component: {fileID: 8884051227009396443}
   - component: {fileID: -7447913791098791421}
-  - component: {fileID: -1030992576999082643}
+  - component: {fileID: -6428682753318859740}
   - component: {fileID: 1847297103248634466}
+  - component: {fileID: 6741036699554052511}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -35,6 +37,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6470959761365819945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107854438635055598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd484ba059ac6054a9e649a709f74c18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Coin: {fileID: 2369723196198737624, guid: 7227c2d62951c5c43a33a6aead89f2d8, type: 3}
 --- !u!212 &8884051227009396443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -99,9 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902b19dab5ce63b4aa27b80a5c5a19af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  ShootSpeed: 20
   rotation: 1
---- !u!114 &-1030992576999082643
+--- !u!114 &-6428682753318859740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 107854438635055598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1bde73e07eb54a4a877e57d543d8c6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b01cf09421c0a044962892bb4e38851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 3
@@ -159,3 +174,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &6741036699554052511
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107854438635055598}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

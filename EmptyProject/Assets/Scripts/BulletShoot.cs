@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class BulletShoot : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float ShootSpeed;
     [SerializeField] private float rotation;
 
     void Update()
     {
 
-        transform.position += new Vector3(speed * rotation * Time.deltaTime , 0,0);
+        transform.position += new Vector3(ShootSpeed * rotation * Time.deltaTime , 0,0);
     }
 }
